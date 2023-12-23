@@ -18,8 +18,8 @@ function Layout() {
   },[])
 
   return (
-    <div className='flex relative min-h-screen w-full'>
-      {interact.isSidebar && <div>
+    <div className='flex relative min-h-screen w-full sm:px-5'>
+      {interact.isSidebar && <div className='sm:py-3'>
         <Sidebar />
       </div>}
       <div className={`flex flex-col w-full max-h-screen min-h-screen overflow-auto pt-3`}> 

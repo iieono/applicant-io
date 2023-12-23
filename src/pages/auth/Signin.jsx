@@ -30,7 +30,7 @@ function Signin() {
 
     const config = {
       method: "POST",
-      url: "http://localhost:8081/api/v1/auth/login",
+      url: "http://localhost:8080/api/v1/auth/login",
       headers:{
         'accept': '*/*',
         'Content-Type': 'application/json'
@@ -53,7 +53,7 @@ function Signin() {
   };
 
   return (
-    <div className="bg-white sm:bg-inherit w-screen h-screen flex justify-center items-center">
+    <div className="bg-white sm:bg-inherit w-screen h-screen flex justify-center items-center overflow-hidden">
       <div className="sm:bg-white sm:shadow-sm sm:border rounded-xl flex flex-col p-5 gap-1">
         <div className="flex flex-col gap-3 p-5 items-center">
           <p className="text-2xl text-blue-800 font-bold mb-3">
